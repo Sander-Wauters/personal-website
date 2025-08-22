@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Navigation } from "./navigation";
+import { ThemeSelect } from "./themeSelect";
 
 export const Layout = () => {
   return (
@@ -9,6 +10,7 @@ export const Layout = () => {
       </main>
       <footer>
         <Navigation />
+        <ThemeSelect />
       </footer>
     </>
   );

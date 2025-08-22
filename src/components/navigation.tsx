@@ -28,8 +28,8 @@ export const Navigation = () => {
   return (
     <nav>
       <ul>
-        {internalLinks.map(({ href, label }) => (
-          <li>
+        {internalLinks.map(({ href, label }, i) => (
+          <li key={i}>
             <Link to={href}>{label}</Link>
           </li>
         ))}
