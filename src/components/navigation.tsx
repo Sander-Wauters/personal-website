@@ -3,6 +3,10 @@ import { routes } from "../routes";
 
 const internalLinks = [
   {
+    href: routes.home,
+    label: "Home",
+  },
+  {
     href: routes.about,
     label: "About",
   },
@@ -22,7 +26,7 @@ const internalLinks = [
     href: routes.interestingStuff,
     label: "Interesting stuff",
   },
-];
+] as const;
 
 export const Navigation = () => {
   return (

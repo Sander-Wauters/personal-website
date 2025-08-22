@@ -13,14 +13,19 @@ import { Gym } from "./pages/gym";
 import { InterestingStuff } from "./pages/interestingStuff";
 import { Games } from "./pages/games";
 import { routes } from "./routes";
+import { Home } from "./pages/home";
 
 const router = createBrowserRouter([
   {
-    path: routes.about,
+    path: routes.home,
     element: <Layout />,
     children: [
       {
         index: true,
+        element: <Home />,
+      },
+      {
+        path: routes.about,
         element: <About />,
       },
       {

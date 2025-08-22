@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 // These should correspond to the files in the "./themes" directory.
-const themes = ["gruvbox-dark", "gruvbox-light"];
+const themes = ["gruvbox-dark", "gruvbox-light"] as const;
 
 const parseCurrentTheme = (href: string) => href.substring(7).split(".css")[0];
 
