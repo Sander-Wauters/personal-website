@@ -12,14 +12,7 @@ import { Projects } from "./pages/projects";
 import { Gym } from "./pages/gym";
 import { InterestingStuff } from "./pages/interestingStuff";
 import { Games } from "./pages/games";
-
-export const routes = {
-  about: "/",
-  projects: "/projects",
-  gym: "/gym",
-  interestingStuff: "/interestingStuff",
-  games: "/games",
-};
+import { routes } from "./routes";
 
 const router = createBrowserRouter([
   {
