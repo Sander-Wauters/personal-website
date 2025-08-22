@@ -5,7 +5,6 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import { About } from "./pages/about";
 import { Layout } from "./components/layout";
 import "./index.scss";
 import { Projects } from "./pages/projects";
@@ -23,10 +22,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-      },
-      {
-        path: routes.about,
-        element: <About />,
       },
       {
         path: routes.projects,
@@ -48,7 +43,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Navigate to={routes.about} />,
+    element: <Navigate to={routes.home} />,
   },
 ]);
 

@@ -7,10 +7,6 @@ const internalLinks = [
     label: "Home",
   },
   {
-    href: routes.about,
-    label: "About",
-  },
-  {
     href: routes.projects,
     label: "Projects",
   },
