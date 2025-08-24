@@ -19,27 +19,27 @@ export const InvoicingSoftwareDelaware = () => {
       </p>
       <p>
         <strong>Source code</strong>:{" "}
-        <ul>
-          <li>
-            web application:{" "}
-            <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-frontend-a02">
-              https://github.com/Sander-Wauters/hogent-2324-sdp2-frontend-a02
-            </ExternalLink>
-          </li>
-          <li>
-            desktop application:{" "}
-            <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-java-a02">
-              https://github.com/Sander-Wauters/hogent-2324-sdp2-java-a02
-            </ExternalLink>
-          </li>
-          <li>
-            back-end:{" "}
-            <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-backend-a02">
-              https://github.com/Sander-Wauters/hogent-2324-sdp2-backend-a02
-            </ExternalLink>
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          web application:{" "}
+          <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-frontend-a02">
+            https://github.com/Sander-Wauters/hogent-2324-sdp2-frontend-a02
+          </ExternalLink>
+        </li>
+        <li>
+          desktop application:{" "}
+          <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-java-a02">
+            https://github.com/Sander-Wauters/hogent-2324-sdp2-java-a02
+          </ExternalLink>
+        </li>
+        <li>
+          back-end:{" "}
+          <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-backend-a02">
+            https://github.com/Sander-Wauters/hogent-2324-sdp2-backend-a02
+          </ExternalLink>
+        </li>
+      </ul>
       <TechStack
         technologies={[
           "JavaScript",

@@ -19,21 +19,21 @@ export const InvoicingSoftwareDozer = () => {
       </p>
       <p>
         <strong>Source code</strong>:{" "}
-        <ul>
-          <li>
-            web application & back-end:{" "}
-            <ExternalLink href="https://github.com/Sander-Wauters/hogent-2425-rise-dotnet-aalst3">
-              https://github.com/Sander-Wauters/hogent-2425-rise-dotnet-aalst3
-            </ExternalLink>
-          </li>
-          <li>
-            mobile application:{" "}
-            <ExternalLink href="https://github.com/Sander-Wauters/hogent-2425-rise-android-aalst3">
-              https://github.com/Sander-Wauters/hogent-2425-rise-android-aalst3
-            </ExternalLink>
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          web application & back-end:{" "}
+          <ExternalLink href="https://github.com/Sander-Wauters/hogent-2425-rise-dotnet-aalst3">
+            https://github.com/Sander-Wauters/hogent-2425-rise-dotnet-aalst3
+          </ExternalLink>
+        </li>
+        <li>
+          mobile application:{" "}
+          <ExternalLink href="https://github.com/Sander-Wauters/hogent-2425-rise-android-aalst3">
+            https://github.com/Sander-Wauters/hogent-2425-rise-android-aalst3
+          </ExternalLink>
+        </li>
+      </ul>
       <TechStack
         technologies={[
           "C#",

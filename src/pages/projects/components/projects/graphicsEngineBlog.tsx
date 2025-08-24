@@ -18,21 +18,21 @@ export const GraphicsEngineBlog = () => {
       </p>
       <p>
         <strong>Source code</strong>:{" "}
-        <ul>
-          <li>
-            front-end:{" "}
-            <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-frontendweb-SanderWauters">
-              https://github.com/Sander-Wauters/hogent-2324-frontendweb-SanderWauters
-            </ExternalLink>
-          </li>
-          <li>
-            back-end:{" "}
-            <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-webservices-SanderWauters">
-              https://github.com/Sander-Wauters/hogent-2324-webservices-SanderWauters
-            </ExternalLink>
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          front-end:{" "}
+          <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-frontendweb-SanderWauters">
+            https://github.com/Sander-Wauters/hogent-2324-frontendweb-SanderWauters
+          </ExternalLink>
+        </li>
+        <li>
+          back-end:{" "}
+          <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-webservices-SanderWauters">
+            https://github.com/Sander-Wauters/hogent-2324-webservices-SanderWauters
+          </ExternalLink>
+        </li>
+      </ul>
       <TechStack
         technologies={["JavaScript", "React", "Node", "Sequelize", "MySQL"]}
       />

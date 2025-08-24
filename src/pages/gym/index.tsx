@@ -1,4 +1,6 @@
-interface LiftData {
+import { useCallback, useState } from "react";
+
+interface Lift {
   exercise: string;
   weight: number;
   reps: number;
@@ -6,7 +8,7 @@ interface LiftData {
   bodyWeight: number;
 }
 
-const lifts: LiftData[] = [
+const lifts: Lift[] = [
   {
     exercise: "Flat barbell bench press",
     weight: 120,
@@ -80,6 +82,36 @@ const lifts: LiftData[] = [
 ] as const;
 
 export const Gym = () => {
+  const [order, setOrder] = useState<{
+    column: keyof Lift;
+    direction: number;
+  }>({ column: "exercise", direction: 1 });
+
+  const toggleOrder = (column: keyof Lift) => () => {
+    if (order.column === column) {
+      setOrder({ ...order, direction: order.direction * -1 });
+    } else {
+      setOrder({ column, direction: 1 });
+    }
+  };
+
+  const orderLifts = useCallback(
+    (a: Lift, b: Lift) => {
+      const valA = a[order.column];
+      const valB = b[order.column];
+
+      if (typeof valA === "string" && typeof valB === "string") {
+        return valA.localeCompare(valB) * order.direction;
+      }
+      if (typeof valA === "number" && typeof valB === "number") {
+        return (valA - valB) * order.direction;
+      }
+
+      return 0;
+    },
+    [order],
+  );
+
   return (
     <>
       <h2>Best lifts and gym bragging rights</h2>
@@ -92,23 +124,25 @@ export const Gym = () => {
       <table>
         <thead>
           <tr>
-            <th>Exercise</th>
-            <th>Weigth</th>
-            <th>Reps</th>
-            <th>Equipment</th>
-            <th>Body weight</th>
+            <th onClick={toggleOrder("exercise")}>Exercise</th>
+            <th onClick={toggleOrder("weight")}>Weigth</th>
+            <th onClick={toggleOrder("reps")}>Reps</th>
+            <th onClick={toggleOrder("equipment")}>Equipment</th>
+            <th onClick={toggleOrder("bodyWeight")}>Body weight</th>
           </tr>
         </thead>
         <tbody>
-          {lifts.map(({ exercise, weight, reps, equipment, bodyWeight }) => (
-            <tr>
-              <td>{exercise}</td>
-              <td>{weight}kg</td>
-              <td>{reps}</td>
-              <td>{equipment ?? "-"}</td>
-              <td>{bodyWeight}kg</td>
-            </tr>
-          ))}
+          {lifts
+            .sort((a, b) => orderLifts(a, b))
+            .map(({ exercise, weight, reps, equipment, bodyWeight }) => (
+              <tr key={exercise}>
+                <td>{exercise}</td>
+                <td>{weight}kg</td>
+                <td>{reps}</td>
+                <td>{equipment ?? "-"}</td>
+                <td>{bodyWeight}kg</td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </>
