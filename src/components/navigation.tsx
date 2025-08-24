@@ -18,10 +18,6 @@ const internalLinks = [
     href: routes.games,
     label: "Games",
   },
-  {
-    href: routes.interestingStuff,
-    label: "Interesting stuff",
-  },
 ] as const;
 
 export const Navigation = () => {

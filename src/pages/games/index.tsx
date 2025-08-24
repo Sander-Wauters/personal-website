@@ -1,3 +1,321 @@
+const pspGames: string[] = [
+  "Assassin's Creed: Bloodlines",
+  "Open Season",
+  "Brothers In Arms D-Day",
+  "Crash Mind Over Mutant",
+  "Crash of the Titans",
+  "Daxter",
+  "Disney Pixar Ratatouille",
+  "Disney Pixar WALL-E",
+  "Grand Theft Auto: Liberty City Stories",
+  "Grand Theft Auto: Vice City Stories",
+  "Jak and Daxter: The Lost Frontier",
+  "Killzone: Liberation",
+  "LEGO Batman The Video Game",
+  "Marvel Ultimate Alliance 2",
+  "MediEvil: Resurrection",
+  "Midnight Club L.A. Remix",
+  "Myst",
+  "Need For Speed Carbon Own The City",
+  "Need for Speed Shift",
+  "Peter Jackson's King Kong The Official Game of the Movie",
+  "Prince of Persia Revelations",
+  "Prince of Persia Rival Swords",
+  "Prince of Persia The Forgotten Sands",
+  "Ratchet & Clank: Size Matters",
+  "Start Wars Battlefront: Renegade Squadron",
+  "Secret Agent Clank",
+  "Star Wars The Force Unleashed",
+  "Tekken 6",
+  "The Golden Compass",
+  "Tom Clancy's Rainbow Six Vegas",
+  "Transformers The Game",
+  "Worms: Open Warfare 2",
+  "Persuit Force",
+  "Persuit Force: Extreme Justice",
+  "God of War: Chains of Olympus",
+  "God of War: Ghost of Sparta",
+] as const;
+
+const dsGames: string[] = [
+  "Pokemon SoulSilver Version",
+  "Pokemon Platinum Version",
+  "Chicken Little Ace in Action",
+  "The Sims 3",
+  "Professor Layton and the Diabolical Box",
+  "Super Mario 64 DS",
+] as const;
+
+const ps2Games: string[] = [
+  "Jak and Daxter: The Precursor Legacy",
+  "Jak II",
+  "Jak X: Combat Racing",
+  "Ratchet & Clank: Going Commando",
+  "Ratchet & Clank: Up Your Arsenal",
+] as const;
+
+const ps3Games: string[] = [
+  "Dishonored",
+  "RAGE",
+  "inFamous 2",
+  "Gran Turismo 5",
+  "Call of Juarez: Bound in Blood",
+  "Red Dead Redemption Undead Nightmare",
+  "The Elder Scrolls IV Oblivion",
+  "The Elder Scrolls V Skyrim",
+  "Darksiders II",
+  "Battlefield 3",
+  "Call of Duty Black Ops 3",
+  "Sniper Ghost Warrior 2",
+  "Diablo 3",
+  "Thief",
+  "Borderlands 2",
+  "Demon Souls",
+] as const;
+
+const pcGames: string[] = [
+  "ArcheAge",
+  "BERSERK and the Band of the Hawk",
+  "The Binding of Isaac: Rebirth",
+  "BioShock Infinite",
+  "Black Desert",
+  "BLACK SOULS",
+  "Bloons TD 6",
+  "#BLUD",
+  "Borderlands 2",
+  "Borderlands 3",
+  "BRINK",
+  "The Case of the Golden Idol",
+  "Cat Quest III",
+  "Chivalry: Medieval Warfare",
+  "Conan Exiles",
+  "Conqueror's Blade",
+  "Counter-Strike 2",
+  "Crossout",
+  "Cyberpunk 2077",
+  "DARK SOULS",
+  "DARK SOULS: Prepare To Die Edition",
+  "DARK SOULS II",
+  "DARK SOULS II: Scholar of the First Sin",
+  "DARK SOULS III",
+  "Darksiders",
+  "Darksiders II",
+  "Deep Rock Galactic",
+  "Deponia",
+  "Desolate",
+  "Destiny 2",
+  "Deus Ex",
+  "Dirty Bomb",
+  "Divinity: Dragon Commander",
+  "Divinity: Original Sin 2",
+  "DLC Quest",
+  "Don't Starve",
+  "Dragon's Dogma: Dark Arisen",
+  "Dread Delusion",
+  "Duke Nukem Forever",
+  "Dungeon Defenders II",
+  "Dying Light",
+  "Dying Light 2",
+  "EARTH DEFENSE FORCE 5",
+  "Earth Defense Force: Insect Armageddon",
+  "Eco",
+  "ELDEN RING",
+  "The Elder Scrolls Online",
+  "Evil West",
+  "The Evil Within",
+  "Exoplanet: First Contact",
+  "E.Y.E: Divine Cybermancy",
+  "Factorio",
+  "Fallout 3",
+  "Fallout: New Vegas",
+  "Far Cry 3",
+  "Far Cry 5",
+  "FEZ",
+  "For Honor",
+  "The Forest",
+  "Forts",
+  "Garry's Mod",
+  "Gotham City Impostors",
+  "Grand Theft Auto V",
+  "Graveyard Keeper",
+  "Grounded",
+  "Grow Home",
+  "GTFO",
+  "Guns of Icarus Online",
+  "Halo: Combat Evolved",
+  "Halo: Reach",
+  "Halo 2",
+  "Halo 3: ODST",
+  "Halo 4",
+  "HELLDIVERS 2",
+  "HITMAN",
+  "Hitman Blood Money",
+  "Hob",
+  "Homefront",
+  "Hotline Miami",
+  "The Incredible Adventures of Van Helsing: Final Cut",
+  "Insurgency",
+  "Jet Set Radio",
+  "Kingdoms of Amalur: Reckoning",
+  "La-Mulana",
+  "Last Oasis",
+  "Loadout",
+  "The Looker",
+  "Lords Of The Fallen",
+  "Lucius",
+  "Mark of the Ninja",
+  "Middle-earth: Shadow of Mordor",
+  "Middle-earth: Shadow of War",
+  "Monster Hunter: World",
+  "Monster Sanctuary",
+  "My Time at Portia",
+  "Natural Selection 2",
+  "Neon White",
+  "Nioh",
+  "ORION: Prelude",
+  "Overlord",
+  "PAYDAY 2",
+  "PlanetSide 2",
+  "Portal 2",
+  "POSTAL 2",
+  "Prince of Persia: The Sands of Time",
+  "Psychonauts",
+  "Raft",
+  "RAGE",
+  "Red Dead Online",
+  "Red Faction Guerrilla",
+  "Refunct",
+  "Reventure",
+  "The Rise of the Golden Idol",
+  "Rogue Legacy",
+  "The Room",
+  "The Room 2",
+  "Saints Row 2",
+  "Saints Row: The Third",
+  "Saints Row IV",
+  "Sanctum 2",
+  "Satisfactory",
+  "Scrap Mechanic",
+  "Sea of Thieves",
+  "Sekiro: Shadows Die Twice",
+  "The Ship",
+  "Sid Meier's Civilization V",
+  "Slay the Princess",
+  "South Park: The Stick of Truth",
+  "South Park: The Fractured But Whole",
+  "S.T.A.L.K.E.R.: Clear Sky",
+  "STAR WARS: The Old Republic",
+  "SteamWorld Dig",
+  "Stories: The Path of Destinies",
+  "Strange Brigade",
+  "Styx: Master of Shadows",
+  "Submerged",
+  "Subnautica",
+  "The Surge",
+  "The Surge 2",
+  "Team Fortress 2",
+  "TEKKEN 7",
+  "Tempest",
+  "TERA",
+  "Terraria",
+  "Thief II: The Metal Age",
+  "Tiny Tina's Wonderlands",
+  "Tom Clancy's Ghost Recon Wildlands",
+  "Tom Clancy's Ghost Recon Breakpoint",
+  "Tom Clancy's Splinter Cell: Conviction",
+  "Tom Clancy's Splinter Cell: Blacklist",
+  "Tom Clancy's The Division 2",
+  "Torchlight 2",
+  "Total War: WARHAMMER II",
+  "Total War: WARHAMMER III",
+  "Tribes: Ascend",
+  "Unturned",
+  "V Rising",
+  "Valheim",
+  "Warhammer 40,000: Darktide",
+  "Warhammer: Vermintide 2",
+  "The Witcher 2: Assasins of Kings",
+  "The Witcher 3: Wild Hunt",
+  "Wolfenstein 3D",
+  "Wolfenstein: The New Order",
+  "Guild Wars 2",
+  "Titan Fall 2",
+  "Return of Reckoning",
+  "Starcraft 2",
+  "Heroes of the Storm",
+  "League of Legends",
+  "Pirates of the Caribbean Online",
+  "The Secret of Monkey Island",
+  "Monkey Island 2: LeChuck's Revenge",
+  "Kenshi",
+  "Fallout 4",
+  "Warhammer 40,000: Space Marine",
+  "Code Vein",
+  "World of Warcraft",
+];
+
 export const Games = () => {
-  return <p>A list of all the games that I played.</p>;
+  return (
+    <>
+      <h1>Game library</h1>
+      <p>
+        This is a list of all the games that I have played. Most of them I
+        finished, some I barely played and other I played way to much.
+      </p>
+      <p>
+        I don't game that much any more these days but sometimes I come back to
+        replay some the old classics.
+      </p>
+      <section>
+        <h2>PC</h2>
+        <ul>
+          {pcGames
+            .sort((a, b) => a.localeCompare(b))
+            .map((name) => (
+              <li>{name}</li>
+            ))}
+        </ul>
+      </section>
+      <section>
+        <h2>PSP</h2>
+        <ul>
+          {pspGames
+            .sort((a, b) => a.localeCompare(b))
+            .map((name) => (
+              <li>{name}</li>
+            ))}
+        </ul>
+      </section>
+      <section>
+        <h2>PS2</h2>
+        <ul>
+          {ps2Games
+            .sort((a, b) => a.localeCompare(b))
+            .map((name) => (
+              <li>{name}</li>
+            ))}
+        </ul>
+      </section>
+      <section>
+        <h2>PS3</h2>
+        <ul>
+          {ps3Games
+            .sort((a, b) => a.localeCompare(b))
+            .map((name) => (
+              <li>{name}</li>
+            ))}
+        </ul>
+      </section>
+      <section>
+        <h2>DS</h2>
+        <ul>
+          {dsGames
+            .sort((a, b) => a.localeCompare(b))
+            .map((name) => (
+              <li>{name}</li>
+            ))}
+        </ul>
+      </section>
+    </>
+  );
 };
