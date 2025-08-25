@@ -11,9 +11,15 @@ export const Library = () => {
         This is a collection of all the books, manga and games that I have
         read/played.
       </p>
-      <Books />
-      <Manga />
-      <Games />
+      <section>
+        <Books />
+      </section>
+      <section>
+        <Manga />
+      </section>
+      <section>
+        <Games />
+      </section>
     </>
   );
 };

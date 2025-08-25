@@ -1,3 +1,4 @@
+import { Gym } from "./components/gym";
 import { Projects } from "./components/projects";
 
 export const Home = () => {
@@ -5,9 +6,14 @@ export const Home = () => {
     <>
       <h1>Sander Wauterses' webpage</h1>
       <p>Hello! I am Sander and this is my webpage.</p>
-      <section>
-        <Projects />
-      </section>
+      <div className="row">
+        <section>
+          <Projects />
+        </section>
+        <section>
+          <Gym />
+        </section>
+      </div>
     </>
   );
 };

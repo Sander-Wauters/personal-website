@@ -31,7 +31,7 @@ const lifts: Lift[] = [
     bodyWeight: 78,
   },
   {
-    exercise: "Pullups",
+    exercise: "Weigthed pullups",
     weight: 50,
     reps: 2,
     equipment: "Straps",

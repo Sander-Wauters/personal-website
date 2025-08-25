@@ -3,31 +3,31 @@ import { routes } from "../../../routes";
 
 const schoolProjects = [
   {
-    name: "Splendor",
-    description: "Boardgame remade in Java.",
-  },
-  {
-    name: "Olympic games paris 2024",
-    description: "Webpage for the olympic games using Spring Boot.",
-  },
-  {
-    name: "Blog",
-    description: "Blog and REST API in JavaScript.",
+    name: "Invoicing software (Dozer)",
+    description: "Invoicing software as a web and mobile application.",
   },
   {
     name: "Invoicing software (Delaware)",
     description: "Invoicing software as a web and desktop application.",
   },
   {
-    name: "Invoicing software (Dozer)",
-    description: "Invoicing software as a web and mobile application.",
+    name: "Blog site",
+    description: "Webpage and REST API in JavaScript.",
+  },
+  {
+    name: "Olympic games paris 2024",
+    description: "Webpage for the olympic games using Spring Boot.",
+  },
+  {
+    name: "Splendor",
+    description: "Boardgame remade in Java.",
   },
 ] as const;
 
 const hobbyProjects = [
   {
     name: "Graphics engine",
-    description: "First major solo project.",
+    description: "Includes skeletal animation, instancing and lighting.",
   },
   {
     name: "Personal webpage",
