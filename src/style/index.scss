@@ -43,13 +43,11 @@ footer {
   margin-bottom: global.$my;
   margin-top: global.$my;
   padding: global.$py 0;
-
-  &>:first-child {
-    margin-bottom: global.$py;
-  }
 }
 
 a {
+  color: var(--link);
+
   a:link {
     color: var(--link);
   }
