@@ -16,20 +16,20 @@ export const GraphicsEngineBlog = () => {
         comments on the different blog posts. It turned out pretty well in my
         opinion. I got a lot of features in and am pretty fond of the styling.
       </p>
-      <p>
+      <p className="list-title">
         <strong>Source code</strong>:{" "}
       </p>
-      <ul>
+      <ul className="styled-list">
         <li>
-          front-end:{" "}
+          Front-end:{" "}
           <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-frontendweb-SanderWauters">
-            https://github.com/Sander-Wauters/hogent-2324-frontendweb-SanderWauters
+            github.com/Sander-Wauters/hogent-2324-frontendweb-SanderWauters
           </ExternalLink>
         </li>
         <li>
-          back-end:{" "}
+          Back-end:{" "}
           <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-webservices-SanderWauters">
-            https://github.com/Sander-Wauters/hogent-2324-webservices-SanderWauters
+            github.com/Sander-Wauters/hogent-2324-webservices-SanderWauters
           </ExternalLink>
         </li>
       </ul>

@@ -1,0 +1,86 @@
+@use "./global.scss";
+
+// Universal styling.
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--background);
+  color: var(--on-background);
+
+  font-family: Helvetica, sans-serif;
+}
+
+button {
+  font-family: Helvetica, sans-serif;
+}
+
+h1,
+h3,
+h5 {
+  color: var(--primary);
+}
+
+h2,
+h4,
+h6 {
+  color: var(--secondary);
+}
+
+main,
+footer {
+  @include global.container;
+}
+
+ul,
+ol {
+  margin: global.$my 0;
+  padding: 0 global.$px;
+}
+
+footer {
+  border-top: global.$divider;
+  margin-bottom: global.$my;
+  margin-top: global.$my;
+  padding: global.$py 0;
+
+  &>:first-child {
+    margin-bottom: global.$py;
+  }
+}
+
+a {
+  a:link {
+    color: var(--link);
+  }
+
+  &:visited {
+    color: var(--visited);
+  }
+
+  &:active {
+    color: var(--active);
+  }
+}
+
+table {
+  th {
+    text-align: start;
+    padding-right: global.$px;
+  }
+
+  td {
+    padding-right: global.$px;
+  }
+}
+
+// Ensures that the footer is always at the bottom of the screen.
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

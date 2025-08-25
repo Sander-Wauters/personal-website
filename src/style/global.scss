@@ -1,0 +1,113 @@
+// Common spacings.
+$divider: 2px solid var(--divider);
+$border: 1px solid var(--border);
+
+$mx: 1rem;
+$my: 1rem;
+$px: 1rem;
+$py: 1rem;
+
+// Common breakpoints.
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin media-sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Used to determine the maximum width of the content in relation to the screen.
+$container-sm-max: 550px;
+$container-md-max: 750px;
+$container-lg-max: 950px;
+$container-xl-max: 1100px;
+
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-sm {
+    min-width: $container-sm-max;
+    max-width: $container-sm-max;
+  }
+
+  @include media-md {
+    min-width: $container-md-max;
+    max-width: $container-md-max;
+  }
+
+  @include media-lg {
+    min-width: $container-lg-max;
+    max-width: $container-lg-max;
+  }
+
+  @include media-xl {
+    min-width: $container-xl-max;
+    max-width: $container-xl-max;
+  }
+}
+
+// Abstract components.
+.container {
+  @include container;
+}
+
+.inline-list {
+  margin: 0;
+  padding: 0 $mx;
+
+  li {
+    display: inline;
+    list-style-type: none;
+    margin-right: $mx;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.styled-button {
+  border: none;
+  background-color: var(--background-color);
+  color: var(--visited);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.list-title {
+  margin-bottom: 0;
+}
+
+.styled-list {
+  list-style-type: none;
+  border-left: $border;
+  margin: 0;
+  padding: $py $px;
+}

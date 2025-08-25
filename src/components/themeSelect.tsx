@@ -24,19 +24,22 @@ export const ThemeSelect = () => {
   });
 
   return (
-    <label>
-      Theme:{" "}
-      <select
-        name="theme"
-        value={currentTheme}
-        onChange={(e) => handleChangeTheme(e.currentTarget.value)}
-      >
+    <div className="row">
+      <strong>Theme</strong>:
+      <ul className="inline-list">
         {themes.map((theme) => (
-          <option key={theme} value={theme}>
-            {theme}
-          </option>
+          <li key={theme}>
+            {currentTheme === theme ? "| " : ""}
+            <button
+              className="styled-button"
+              onClick={() => handleChangeTheme(theme)}
+            >
+              {theme}
+            </button>
+            {currentTheme === theme ? " |" : ""}
+          </li>
         ))}
-      </select>
-    </label>
+      </ul>
+    </div>
   );
 };

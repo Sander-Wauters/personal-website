@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Layout } from "./components/layout";
-import "./index.scss";
+import "./style/index.scss";
 import { Projects } from "./pages/projects";
 import { Gym } from "./pages/gym";
 import { Games } from "./pages/games";

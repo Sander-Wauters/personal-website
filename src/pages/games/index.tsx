@@ -1,3 +1,5 @@
+import "./games.scss";
+
 const pspGames: string[] = [
   "Assassin's Creed: Bloodlines",
   "Open Season",
@@ -268,7 +270,7 @@ export const Games = () => {
       </p>
       <section>
         <h2>PC</h2>
-        <ul>
+        <ul className="library-list">
           {pcGames
             .sort((a, b) => a.localeCompare(b))
             .map((name) => (
@@ -278,7 +280,7 @@ export const Games = () => {
       </section>
       <section>
         <h2>PSP</h2>
-        <ul>
+        <ul className="library-list">
           {pspGames
             .sort((a, b) => a.localeCompare(b))
             .map((name) => (
@@ -288,7 +290,7 @@ export const Games = () => {
       </section>
       <section>
         <h2>PS2</h2>
-        <ul>
+        <ul className="library-list">
           {ps2Games
             .sort((a, b) => a.localeCompare(b))
             .map((name) => (
@@ -298,7 +300,7 @@ export const Games = () => {
       </section>
       <section>
         <h2>PS3</h2>
-        <ul>
+        <ul className="library-list">
           {ps3Games
             .sort((a, b) => a.localeCompare(b))
             .map((name) => (
@@ -308,7 +310,7 @@ export const Games = () => {
       </section>
       <section>
         <h2>DS</h2>
-        <ul>
+        <ul className="library-list">
           {dsGames
             .sort((a, b) => a.localeCompare(b))
             .map((name) => (

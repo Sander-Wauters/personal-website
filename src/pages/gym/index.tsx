@@ -114,7 +114,7 @@ export const Gym = () => {
 
   return (
     <>
-      <h2>Best lifts and gym bragging rights</h2>
+      <h1>Best lifts and gym bragging rights</h1>
       <p>
         I have been training for ~{new Date().getFullYear() - 2017} years now
         and it's one of my favorite hobbies. Usually I just work out for fun but

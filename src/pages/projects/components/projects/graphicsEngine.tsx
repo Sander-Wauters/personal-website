@@ -21,7 +21,7 @@ export const GraphicsEngine = () => {
       <p>
         <strong>Source code</strong>:{" "}
         <ExternalLink href={"https://github.com/Sander-Wauters/RoX"}>
-          https://github.com/Sander-Wauters/RoX
+          github.com/Sander-Wauters/RoX
         </ExternalLink>
       </p>
       <TechStack technologies={["C++", "DirectX12", "DirectXTK12"]} />

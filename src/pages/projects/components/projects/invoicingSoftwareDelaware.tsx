@@ -17,26 +17,26 @@ export const InvoicingSoftwareDelaware = () => {
         my opinion. On the other hand the desktop application was textbook
         programming.
       </p>
-      <p>
+      <p className="list-title">
         <strong>Source code</strong>:{" "}
       </p>
-      <ul>
+      <ul className="styled-list">
         <li>
-          web application:{" "}
+          Web application:{" "}
           <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-frontend-a02">
-            https://github.com/Sander-Wauters/hogent-2324-sdp2-frontend-a02
+            github.com/Sander-Wauters/hogent-2324-sdp2-frontend-a02
           </ExternalLink>
         </li>
         <li>
-          desktop application:{" "}
+          Desktop application:{" "}
           <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-java-a02">
-            https://github.com/Sander-Wauters/hogent-2324-sdp2-java-a02
+            github.com/Sander-Wauters/hogent-2324-sdp2-java-a02
           </ExternalLink>
         </li>
         <li>
-          back-end:{" "}
+          Back-end:{" "}
           <ExternalLink href="https://github.com/Sander-Wauters/hogent-2324-sdp2-backend-a02">
-            https://github.com/Sander-Wauters/hogent-2324-sdp2-backend-a02
+            github.com/Sander-Wauters/hogent-2324-sdp2-backend-a02
           </ExternalLink>
         </li>
       </ul>

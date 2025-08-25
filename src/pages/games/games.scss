@@ -1,0 +1,23 @@
+@use "../../style/global.scss";
+
+.library-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    width: 100%;
+
+    @include global.media-md {
+      width: 50%
+    }
+
+    @include global.media-lg {
+      width: 33%
+    }
+  }
+}

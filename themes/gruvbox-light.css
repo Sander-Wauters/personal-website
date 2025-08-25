@@ -1,4 +1,13 @@
 :root {
   --background: #fbf1c7;
   --on-background: #3c3836;
+  --divider: #928374;
+  --border: #928374;
+
+  --primary: #af3a03;
+  --secondary: #b57614;
+
+  --link: #076678;
+  --visited: #8f3f71;
+  --active: #9d0006;
 }

@@ -19,7 +19,7 @@ export const Splendor = () => {
       <p>
         <strong>Source code</strong>:{" "}
         <ExternalLink href="https://github.com/Sander-Wauters/hogent-2223-sdp-splendor-g054">
-          https://github.com/Sander-Wauters/hogent-2223-sdp-splendor-g054
+          github.com/Sander-Wauters/hogent-2223-sdp-splendor-g054
         </ExternalLink>
       </p>
       <TechStack technologies={["Java", "JavaFX", "MySQL"]} />

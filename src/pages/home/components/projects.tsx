@@ -40,8 +40,8 @@ export const Projects = () => {
     <>
       <h2>Some of my projects</h2>
       <section>
-        <h3>School projects</h3>
-        <ul>
+        <h3 className="list-title">School projects</h3>
+        <ul className="styled-list">
           {schoolProjects.map(({ name, description }, i) => (
             <li key={i}>
               <strong>{name}</strong>: {description}
@@ -50,8 +50,8 @@ export const Projects = () => {
         </ul>
       </section>
       <section>
-        <h3>Hobby projects</h3>
-        <ul>
+        <h3 className="list-title">Hobby projects</h3>
+        <ul className="styled-list">
           {hobbyProjects.map(({ name, description }, i) => (
             <li key={i}>
               <strong>{name}</strong>: {description}

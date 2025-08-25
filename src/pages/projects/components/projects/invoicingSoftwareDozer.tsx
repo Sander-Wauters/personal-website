@@ -17,20 +17,20 @@ export const InvoicingSoftwareDozer = () => {
         especially the mobile part. We got everything working but had to drop
         some features.
       </p>
-      <p>
+      <p className="list-title">
         <strong>Source code</strong>:{" "}
       </p>
-      <ul>
+      <ul className="styled-list">
         <li>
-          web application & back-end:{" "}
+          Web application & back-end:{" "}
           <ExternalLink href="https://github.com/Sander-Wauters/hogent-2425-rise-dotnet-aalst3">
-            https://github.com/Sander-Wauters/hogent-2425-rise-dotnet-aalst3
+            github.com/Sander-Wauters/hogent-2425-rise-dotnet-aalst3
           </ExternalLink>
         </li>
         <li>
-          mobile application:{" "}
+          Mobile application:{" "}
           <ExternalLink href="https://github.com/Sander-Wauters/hogent-2425-rise-android-aalst3">
-            https://github.com/Sander-Wauters/hogent-2425-rise-android-aalst3
+            github.com/Sander-Wauters/hogent-2425-rise-android-aalst3
           </ExternalLink>
         </li>
       </ul>

@@ -1,0 +1,6 @@
+@use "../../style/global.scss";
+
+.project-section {
+  border-top: global.$divider;
+  margin-bottom: global.$my;
+}

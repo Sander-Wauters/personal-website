@@ -4,6 +4,7 @@ import { InvoicingSoftwareDelaware } from "./components/projects/invoicingSoftwa
 import { InvoicingSoftwareDozer } from "./components/projects/invoicingSoftwareDozer";
 import { OlympicGames2024 } from "./components/projects/olympicGames2024";
 import { Splendor } from "./components/projects/splendor";
+import "./projects.scss";
 
 export const Projects = () => {
   return (
@@ -15,22 +16,22 @@ export const Projects = () => {
       </p>
       <section>
         <h2>Software projects</h2>
-        <section>
+        <section className="project-section">
           <InvoicingSoftwareDozer />
         </section>
-        <section>
+        <section className="project-section">
           <GraphicsEngine />
         </section>
-        <section>
+        <section className="project-section">
           <InvoicingSoftwareDelaware />
         </section>
-        <section>
+        <section className="project-section">
           <GraphicsEngineBlog />
         </section>
-        <section>
+        <section className="project-section">
           <OlympicGames2024 />
         </section>
-        <section>
+        <section className="project-section">
           <Splendor />
         </section>
       </section>
