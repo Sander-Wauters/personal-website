@@ -118,8 +118,8 @@ export const Gym = () => {
       <p>
         I have been training for ~{new Date().getFullYear() - 2017} years now
         and it's one of my favorite hobbies. Usually I just work out for fun but
-        now and then I like going for some numbers. Here are some of by best
-        lifts that I have done.
+        now and then I like going for some numbers. Here are some of my best
+        lifts.
       </p>
       <table>
         <thead>

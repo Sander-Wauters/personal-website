@@ -15,12 +15,15 @@ export const Projects = () => {
         years.
       </p>
       <section>
-        <h2>Software projects</h2>
-        <section className="project-section">
-          <InvoicingSoftwareDozer />
-        </section>
+        <h2>Hobby projects</h2>
         <section className="project-section">
           <GraphicsEngine />
+        </section>
+      </section>
+      <section>
+        <h2>School projects</h2>
+        <section className="project-section">
+          <InvoicingSoftwareDozer />
         </section>
         <section className="project-section">
           <InvoicingSoftwareDelaware />
