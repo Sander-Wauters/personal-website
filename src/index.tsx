@@ -9,7 +9,7 @@ import { Layout } from "./components/layout";
 import "./style/index.scss";
 import { Projects } from "./pages/projects";
 import { Gym } from "./pages/gym";
-import { Games } from "./pages/games";
+import { Library } from "./pages/library";
 import { routes } from "./routes";
 import { Home } from "./pages/home";
 
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
         element: <Gym />,
       },
       {
-        path: routes.games,
-        element: <Games />,
+        path: routes.library,
+        element: <Library />,
       },
     ],
   },

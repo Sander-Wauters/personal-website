@@ -16,8 +16,8 @@ const internalLinks = [
     label: "Gym",
   },
   {
-    href: routes.games,
-    label: "Games",
+    href: routes.library,
+    label: "Library",
   },
 ] as const;
 

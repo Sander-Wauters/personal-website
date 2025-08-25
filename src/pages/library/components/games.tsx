@@ -1,4 +1,4 @@
-import "./games.scss";
+import { LibrarySection } from "./librarySection";
 
 const pspGames: string[] = [
   "Assassin's Creed: Bloodlines",
@@ -259,7 +259,7 @@ const pcGames: string[] = [
 export const Games = () => {
   return (
     <>
-      <h1>Game library</h1>
+      <h2>Games</h2>
       <p>
         This is a list of all the games that I have played. Most of them I
         finished, some I barely played and other I played way to much.
@@ -268,56 +268,11 @@ export const Games = () => {
         I don't game that much any more these days but sometimes I come back to
         replay some the old classics.
       </p>
-      <section>
-        <h2>PC</h2>
-        <ul className="library-list">
-          {pcGames
-            .sort((a, b) => a.localeCompare(b))
-            .map((name) => (
-              <li>{name}</li>
-            ))}
-        </ul>
-      </section>
-      <section>
-        <h2>PSP</h2>
-        <ul className="library-list">
-          {pspGames
-            .sort((a, b) => a.localeCompare(b))
-            .map((name) => (
-              <li>{name}</li>
-            ))}
-        </ul>
-      </section>
-      <section>
-        <h2>PS2</h2>
-        <ul className="library-list">
-          {ps2Games
-            .sort((a, b) => a.localeCompare(b))
-            .map((name) => (
-              <li>{name}</li>
-            ))}
-        </ul>
-      </section>
-      <section>
-        <h2>PS3</h2>
-        <ul className="library-list">
-          {ps3Games
-            .sort((a, b) => a.localeCompare(b))
-            .map((name) => (
-              <li>{name}</li>
-            ))}
-        </ul>
-      </section>
-      <section>
-        <h2>DS</h2>
-        <ul className="library-list">
-          {dsGames
-            .sort((a, b) => a.localeCompare(b))
-            .map((name) => (
-              <li>{name}</li>
-            ))}
-        </ul>
-      </section>
+      <LibrarySection title="PC" contents={pcGames} />
+      <LibrarySection title="PSP" contents={pspGames} />
+      <LibrarySection title="PS2" contents={ps2Games} />
+      <LibrarySection title="PS3" contents={ps3Games} />
+      <LibrarySection title="DS" contents={dsGames} />
     </>
   );
 };

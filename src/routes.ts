@@ -2,5 +2,5 @@ export const routes = {
   home: "/",
   projects: "/projects",
   gym: "/gym",
-  games: "/games",
+  library: "/library",
 };

@@ -1,0 +1,27 @@
+@use "../../style/global.scss";
+
+.library-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding-left: global.$px;
+    padding-right: global.$px;
+    border-left: global.$border;
+
+    width: calc(100% - 1rem - calc(global.$px * 2));
+
+    @include global.media-sm {
+      width: calc(50% - 1rem - calc(global.$px * 2));
+    }
+
+    @include global.media-lg {
+      width: calc(33% - 1rem - calc(global.$px * 2));
+    }
+  }
+}
